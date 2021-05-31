@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>le visage</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/9b701ba3c8.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>le bien-être</h1></a>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" value="" placeholder="recherche">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="facebook"> </a></li>
+                    <li><a href="#" class="facebook twitter"> </a></li>
+                    <li><a href="#" class="facebook chrome"> </a></li>
+                    <li><a href="#" class="facebook in"> </a></li>
+                    <li><a href="#" class="facebook beh"> </a></li>
+                    <li><a href="#" class="facebook vem"> </a></li>
+                    <li><a href="#" class="facebook yout"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!--head-bottom-->
+    <div class="head-bottom">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="terms.html">Les conditions générales de</a></li>
+                    <li><a href="policy.html">Politique de confidentialité</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </div>
+    <!--head-bottom-->
+</div>
+
+<style>
+    .header-top {
+        padding: 1.5em 0;
+        background: #fff;
+    }
+
+    /*--logo--*/
+    .logo {
+        float: left;
+    }
+
+    .logo a {
+        display: block;
+    }
+
+    .logo a h1 {
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        background: #464646;
+        padding: 0.2em 0.5em;
+    }
+
+    .logo a h1:hover {
+        text-decoration: none;
+    }
+
+    /*--logo--*/
+    /*--social--*/
+    .social {
+        float: right;
+        width: 26.33%;
+        padding: 0.32em 0;
+    }
+
+    .social ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .social ul li a.facebook {
+        background: url(../images/social.png) no-repeat 0px 0px;
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+
+    .social ul li a.twitter {
+        background: url(../images/social.png) no-repeat -34px 0px;
+    }
+
+    .social ul li a.chrome {
+        background: url(../images/social.png) no-repeat -68px 0px;
+    }
+
+    .social ul li a.in {
+        background: url(../images/social.png) no-repeat -102px 0px;
+    }
+
+    .social ul li a.beh {
+        background: url(../images/social.png) no-repeat -136px 0px;
+    }
+
+    .social ul li a.vem {
+        background: url(../images/social.png) no-repeat -169px 0px;
+    }
+
+    .social ul li a.yout {
+        background: url(../images/social.png) no-repeat -202px 0px;
+    }
+
+    .social ul li a.facebook:hover {
+        opacity: .5;
+    }
+
+    /*--social--*/
+    /*--search--*/
+    .search {
+        float: right;
+        width: 25%;
+        margin: 0.2em 0;
+    }
+
+    .search {
+        position: relative;
+        border: 2px solid #333333;
+        padding: 0.5em 0;
+        background: #fff;
+    }
+
+    .search input[type="text"] {
+        width: 80%;
+        outline: none;
+        padding: 0em 0.6em;
+        font-size: 1em;
+        color: #333333;
+        position: relative;
+        border: none;
+    }
+
+    .search input[type="submit"] {
+        background: url(../images/search-icon.png) no-repeat 0px 2px #fff;
+        border: none;
+        height: 26px;
+        width: 26px;
+        display: inline-block;
+        position: absolute;
+        outline: none;
+        cursor: pointer;
+        top: 6px;
+        right: 2px;
+    }
+
+    /*--search--*/
+    .logo a span {
+        font-size: 0.9em;
+        margin-left: 5em;
+        padding-top: 0.5em;
+    }
+
+    .head-bottom {
+        background: #fa4b2a;
+    }
+
+    /*--navigation--*/
+    ul.nav.navbar-nav li.active a {
+        background: #464646 ! important;
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700;
+    }
+
+    ul.nav.navbar-nav li a:hover {
+        background: #464646 ! important;
+        color: #fff ! important;
+    }
+
+    ul.nav.navbar-nav li a {
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700 ! important;
+        padding: 15px 23px ! important;
+        border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+        font-size: 1em;
+        display: block;
+    }
+
+    .head-bottom ul.dropdown-menu li a {
+        color: #000 ! important;
+        padding: 8px 15px ! important;
+        font-size: 0.9em ! important;
+    }
+
+    .navbar-collapse {
+        padding-left: 0px ! important;
+        padding-right: 0px ! important;
+    }
+
+    .collapse {
+        display: none;
+    }
+</style>
+
+<section class="contact-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-lg-6">
+                <div class="contact-content mb-100">
+                    <h4>Contacts</h4>
+                    <!-- Single Contact Info -->
+                    <div class="single-contact-info">
+                        <h6>Adresse:</h6>
+                        <h4>276, chemin Madeleine Chauvin
+77293 Michel</h4>
+                    </div>
+
+                    <!-- Single Contact Info -->
+                    <div class="single-contact-info">
+                        <h6>Email:</h6>
+                        <h4>pauline.dupont@yahoo.fr</h4>
+                    </div>
+
+                    <!-- Single Contact Info -->
+                    <div class="single-contact-info">
+                        <h6>Le numéro de téléphone:</h6>
+                        <h4>+7414818345283</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="contact-content mb-100">
+                    <h4>Laisser un commentaire</h4>
+
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        <form action="thanks.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Le nom de">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-lastname" placeholder="Nom de famille">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-phone" placeholder="Le numéro de téléphone">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Le texte du commentaire"></textarea>
+                                <label class="terms-field">
+                                    <input type="checkbox" name="terms" value="check" required="">
+                                    <a href="policy.html" target="_blank">
+                                        J'ai lu et j'accepte les conditions
+                                    </a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn nikki-btn mt-15">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+    .section-padding-100-0 {
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+    .contact-content {
+        position: relative;
+        z-index: 2;
+    }
+    .mb-100 {
+        margin-bottom: 100px !important;
+    }
+    .contact-content h4 {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+    .contact-content .single-contact-info {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .contact-content .single-contact-info h6 {
+        font-size: 18px;
+        color: #595959;
+        font-weight: 500;
+    }
+    .contact-content .single-contact-info h4 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .contact-form-area .form-control {
+        position: relative;
+        z-index: 2;
+        height: 50px;
+        width: 100%;
+        background-color: #ffffff;
+        font-size: 14px;
+        margin-bottom: 15px;
+        border: 1px solid #ebebeb;
+        border-radius: 0;
+        padding: 15px 30px;
+        color: #a6a6a6;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+    }
+    .contact-form-area textarea.form-control {
+        height: 120px;
+    }
+    .nikki-btn {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        min-width: 180px;
+        height: 50px;
+        color: #191919;
+        background-color: #ffffff;
+        border: 1px solid #191919;
+        border-radius: 2px;
+        padding: 0 30px;
+        font-size: 14px;
+        line-height: 48px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .mt-15 {
+        margin-top: 15px !important;
+    }
+</style>
+
+<footer class="probootstrap-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb0">&copy; Copyright. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+    .probootstrap-footer {
+        padding: 3em 0;
+        background: #000;
+        position: relative;
+        color: rgba(255,255,255,.4);
+    }
+</style>
+<div class='cookie-banner'>
+    <p>
+        Le site utilise des cookies. Ils vous permettent de vous reconnaître et de recevoir des informations sur votre expérience d'utilisateur.En continuant à naviguer dans le site, je suis d'accord avec l'utilisation des cookies par le propriétaire du site en conformité avec les  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Politique de cookies</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    window.onload = function () {
+        jQuery('.close-cookie').click(function () {
+            jQuery('.cookie-banner').fadeOut();
+        })
+    }
+
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+
+</body>
+</html>
